@@ -1,0 +1,19 @@
+linked_list_test.c: In function 'EncodeCobs':
+linked_list_test.c:42:2: error: expected ';' before 'return'
+  return SLen  + 1;
+  ^
+linked_list_test.c:20:10: warning: unused variable 'EncodeValue' [-Wunused-variable]
+  uint8_t EncodeValue = 1;
+          ^
+linked_list_test.c:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+linked_list_test.c: In function 'EncodeMain':
+linked_list_test.c:81:29: error: 'Frame' undeclared (first use in this function)
+  uint8_t FrameSize = sizeof(Frame)/sizeof(Frame[0]);
+                             ^
+linked_list_test.c:81:29: note: each undeclared identifier is reported only once for each function it appears in
+linked_list_test.c: At top level:
+linked_list_test.c:45:13: warning: 'DecodeCobs' defined but not used [-Wunused-function]
+ static void DecodeCobs(uint8_t *DstBuff, uint16_t DLen, uint8_t const *SrcBuff, uint16_t SLen)
+             ^
