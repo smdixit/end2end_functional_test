@@ -1,5 +1,6 @@
 #define POWER_DISPLAY_DB_CONNECTOR_CPP
-//#include "Generic_DB_Connector.hpp"
+#if 0
+#include "Generic_DB_Connector.hpp"
 #include "sqlite_tryouts_02.h"
 
 
@@ -17,3 +18,4 @@ int DB_main(void)
 
 	return 0;
 }
+#endif
