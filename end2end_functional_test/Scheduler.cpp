@@ -95,9 +95,10 @@ void SchedActions(SSchedTable *pSchedTable, int CounterMS)
     pSchedTable->pRunnable(CounterMS);
 }
 
-void SchedulerRun(int CounterMS)
+void SchedulerRun(int inCounterMS)
 {
     int i;
+    CounterMS = inCounterMS;
     for(i = 0; i < (sizeof(SchedTable) / sizeof(SchedTable[0]) ); i++)
     {
         if(CounterMS > SchedTable[i].StartDelay)
@@ -214,3 +215,8 @@ void thisFeeder(struct DataFromGui_t DataFromGui,  StaticTables_t mStaticTables)
     }
 }
 
+/* Exported Interface*/
+uint32 Get_OsTick(void)
+{
+  return CounterMS;
+}

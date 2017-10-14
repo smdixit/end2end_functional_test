@@ -11,13 +11,15 @@
 #include "Project_Types_MSVC.h"
 #include "scheduler_if.hpp"
 
-/* Exported If*/
+#if 0
+/* Exported Interface*/
 uint32 Get_OsTick(void)
 {
     uint32 i = 1;
    // return CounterMS;
     return i;
 }
+#endif
 
  int main(int argc, char *argv[])
  {
