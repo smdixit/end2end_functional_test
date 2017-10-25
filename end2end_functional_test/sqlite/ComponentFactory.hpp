@@ -9,7 +9,7 @@ class ComponentFactory{
 public:
 	PopulateItems * CreateComponent(string ComponentName, PopulateItems *pPopulateItems){
 		cout << __FUNCTION__ << __LINE__ << endl;
-		if (ComponentName.compare("BlinkerManager") == 0) {
+        if (ComponentName.compare("CommonInputs") == 0) {
 			return new Pop_BlinkerManager; //Populate from Table
 	     }
 	}
